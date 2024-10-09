@@ -30,22 +30,25 @@
     <main>
         <div class="container">
             <div class="row bg-secondary justify-content-evenly" style="height: 300px;">
-                <div class="col-4 py-4">
+                <!-- <div class="col-4 py-4">
                     <label for="full_name" class="form-label">Nome e Cognome</label>
                     <input class="form-control" type="text" name="full_name" id="full_name" required>
-                </div>
+                </div> -->
                 <!-- /.col-4 -->
                 <div class="col-4 py-4">
                     <label for="distance" class="form-label">Km da percorrere</label>
-                    <input class="form-control mb-5" type="number" name="distance" id="distance" required>
-                    <button class="btn btn-light mt-5" id="price_calc">Calcola il prezzo del tuo biglietto</button>
+                    <input class="form-control" type="number" name="distance" id="distance" required>
                 </div>
                 <!-- /.col-4 -->
                 <div class="col-4 py-4">
                     <label for="age_range" class="form-label">Età</label>
-                    <input class="form-control" type="number" name="distance" id="distance" required>
+                    <input class="form-control" type="number" name="age_range" id="age_range" required>
                 </div>
                 <!-- /.col-4 -->
+                <div class="col-6">
+                    <button class="btn btn-light mt-5 w-100" id="price_calc">Calcola il prezzo del tuo biglietto</button>
+                </div>
+                <!-- /.col-12 -->
             </div>
             <!-- /.row -->
         </div>
