@@ -29,26 +29,36 @@
     </header>
     <main>
         <div class="container">
-            <div class="row bg-secondary justify-content-evenly">
-                <!-- <div class="col-4 py-4">
-                    <label for="full_name" class="form-label">Nome e Cognome</label>
-                    <input class="form-control" type="text" name="full_name" id="full_name" required>
-                </div> -->
-                <!-- /.col-4 -->
-                <div class="col-4 py-4">
-                    <label for="distance" class="form-label">Km da percorrere</label>
-                    <input class="form-control" type="number" name="distance" id="distance" required>
+            <div class="row bg-secondary justify-content-evenly rounded">
+                <form action="">
+                    <div class="m-4">
+                        <label for="full_name" class="form-label">Nome e Cognome</label>
+                        <input class="form-control" type="text" name="full_name" id="full_name" required>
+                    </div>
+                    <div class="m-4">
+                        <label for="distance" class="form-label">Km da percorrere</label>
+                        <input class="form-control" type="number" name="distance" id="distance" required>
+                    </div>
+                    <div class="m-4">
+                        <label for="age_range" class="form-label">Età</label>
+                        <input class="form-control" type="number" name="age_range" id="age_range" required>
+                    </div>
+                    <div class="m-4">
+                        <button class="btn btn-light mt-5 w-100" id="price_calc" type="submit">Calcola il prezzo del tuo biglietto</button>
+                    </div>
+                </form>
+            </div>
+            <!-- /.row -->
+            <div class="row bg-secondary justify-content-evenly rounded my-5 p-4 d-none" id="return_box">
+                <div class="col-6 traveler_data">
+
                 </div>
-                <!-- /.col-4 -->
-                <div class="col-4 py-4">
-                    <label for="age_range" class="form-label">Età</label>
-                    <input class="form-control" type="number" name="age_range" id="age_range" required>
+                <!-- /.traveler_data -->
+                <div class="col-6 ticket_data">
+
                 </div>
-                <!-- /.col-4 -->
-                <div class="col-6 mb-5">
-                    <button class="btn btn-light mt-5 w-100" id="price_calc">Calcola il prezzo del tuo biglietto</button>
-                </div>
-                <!-- /.col-12 -->
+                <!-- /.ticket_data -->
+                
             </div>
             <!-- /.row -->
         </div>
